@@ -1,0 +1,303 @@
+ /* inicio do css */
+ * {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+ }
+
+ body{
+   background-image: url(./imgs/salsichaemolho.jpg);
+   background-size: 1940px 2400px;
+   font-family: 'Roboto', sans-serif;
+   font-size: 12px;
+   height: 100vh;
+ }
+  
+ .menu{
+   position: fixed;
+   width: 100vw;
+   background-color: transparent;
+   top: 0;
+   z-index: 1;
+ }
+ 
+ .menu ul{
+   display: flex;
+   justify-content: space-around;
+ }
+
+ .menu a{
+   display: block;
+   padding: 10px 20px;
+   transition: background-color 1s, color 1s;
+ }
+
+ .menu a:hover{
+   background-color: #f5f5f54f;
+ }
+ 
+ a{
+   color:black;
+   text-decoration: none;
+   font-size: 175%;
+ }
+ 
+ a:hover{
+   text-decoration: underline;
+ }
+
+ .img-casa{
+   height: 22px;
+   width: 29px;
+ }
+
+ ::marker{
+    color: transparent;
+ }
+
+ .titulo {
+   padding-top: 250px;
+   text-align: center;
+   transform: scale(0.2) translateY(50vh);
+   opacity: 0;
+  
+   animation: linear 1s animacaoTitulo forwards;
+ }
+
+ @keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+  }  
+  to {
+      transform: scale(1) translateY(0);
+    opacity: 1;
+  }
+ }
+
+ .site-subtitle,
+ .site-title {
+   color: black;
+ }
+
+ .site-title {
+   font-size: 6.2em;
+   font-family: 'Balsamiq Sans', cursive;
+ }
+
+ .site-subtitle {
+  font-size: 2.2em;
+  font-style: italic;
+  font-family: 'Fredoka One', cursive;
+ }
+
+  .grid {
+   display: grid;
+   gap: 4em;
+   grid-template-columns: 260px 260px 260px;
+   justify-content: center;
+   align-content: center;
+   height: 215px;
+  }
+
+  .img-salsichas {
+    text-align: center;
+  }
+
+  .img-salsichas {
+    border-radius: 30%;
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 500ms;
+  }
+
+  .img-salsichas:hover {
+    transform: scale(1.2) rotate(5deg);
+  }
+
+ .produtos h2{
+  padding-top: 300px;
+  text-align: center;
+  color: black;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 40px;
+  margin-bottom: 35px;
+ }
+
+ .produtos {
+    padding-bottom: 350px;
+ }
+
+ .container {
+    margin-left: auto;
+    margin-right: auto;          
+    max-width: 1200px;
+    padding-bottom: 0px;
+  }
+
+  .dsalsichas{
+    font-size: 20px;
+    text-align: center;
+  }
+
+  /* v 550px v */
+
+  @media (min-width: 550px) {
+    .produtos h2{
+      padding-top: 120px;
+    }
+    .titulo{
+      padding-top: 390px;
+      font-size: 20px;
+    }
+    .sobre-p{
+      font-size: 24px;
+      text-align: center;
+      padding: 10px 100px;
+    }
+  }
+
+  /* ^ 550px ^ */
+
+  /* v 700px v */
+
+  @media (min-width: 700px) {
+    .produtos h2{
+      padding-top: 170px;
+    }
+    .titulo{
+      padding-top: 390px;
+      font-size: 20px;
+    }
+    .sobre-p{
+      font-size: 24px;
+      text-align: center;
+      padding: 10px 250px;
+    }
+  }
+
+  /* ^ 700px ^ */
+
+  /* v 1000px v */
+
+  @media (min-width: 1000px) {
+    .produtos h2{
+      padding-top: 170px;
+    }
+    .titulo{
+      padding-top: 250px;
+    }
+    .sobre-p{
+      font-size: 24px;
+      text-align: center;
+      padding: 10px 115px;
+    }
+  }
+
+  /* ^ 1000px ^ */
+
+  /* v 1200px v */
+
+  @media (min-width: 1200px) {
+    .produtos h2{
+      padding-top: 140px;
+    }
+    .titulo{
+      padding-top: 220px;
+    }
+    .sobre-p{
+      font-size: 24px;
+      text-align: center;
+      padding: 10px 250px;
+    }
+  }
+
+  /* ^ 1200px ^ */
+
+  /* v 1300px v */
+
+  @media (min-width: 1300px) {
+    .produtos h2{
+      padding-top: 115px;
+    }
+    .titulo{
+      padding-top: 220px;
+    }
+    .sobre-p{
+      font-size: 24px;
+      text-align: center;
+      padding: 10px 250px;
+    }
+  }
+
+  /* ^ 1300px ^ */
+
+  /* v 1900px v */
+
+  @media (min-width: 1900px) {
+    .produtos h2{
+      padding-top: 300px;
+    }
+    .titulo{
+      padding-top: 300px;
+    }
+    .sobre-p{
+      font-size: 25px;
+      text-align: center;
+      padding: 10px 420px;
+    }
+  }
+
+  /* ^ 1900px ^ */
+
+  .sobre h2{
+    padding-top: 140px;
+    padding-bottom: 5px;
+    text-align: center;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 41px
+  }
+
+  .contato h2{
+    padding-bottom: 7px;
+    text-align: center;
+    color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 40px
+  }
+
+  .contato{
+    padding-top: 140px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+ .contato a {
+   color: black;
+   font-size: 6em;
+   transition: text-shadow 1s;
+  }
+
+ .contato a:active,
+ .contato a:hover {
+   text-decoration: none;
+   text-shadow: black 0px 0px 15px;
+  }
+
+  .rodape{
+    height: 50px;
+    background-color: black;
+  }
+
+
+  .rodape-f{
+    padding-top: 14px;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 20px;
+  }
+
+  /* fim do css */
